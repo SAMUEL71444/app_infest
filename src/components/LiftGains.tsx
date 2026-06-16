@@ -51,9 +51,24 @@ const GainsTooltip = ({ active, payload, label }: any) => {
 
 /* ── Quick-stat items from data ── */
 const quickStats = [
-  { label: 'Top-20% Capture', value: `${liftGains.top_20_capture}%`, icon: '🎯' },
-  { label: 'vs Random', value: `${liftGains.random_20_capture}%`, icon: '🎲' },
-  { label: 'Improvement Factor', value: `${liftGains.improvement_factor}×`, icon: '⚡' },
+  {
+    label: 'Top-20% Capture',
+    value: `${liftGains.top_20_capture}%`,
+    color: 'text-brand-400',
+    path: 'M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+  },
+  {
+    label: 'vs Random',
+    value: `${liftGains.random_20_capture}%`,
+    color: 'text-surface-400',
+    path: 'M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5',
+  },
+  {
+    label: 'Improvement Factor',
+    value: `${liftGains.improvement_factor}×`,
+    color: 'text-success-400',
+    path: 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941',
+  },
 ];
 
 export default function LiftGains() {
@@ -146,7 +161,11 @@ export default function LiftGains() {
             className="glass-card px-5 py-4 flex items-center gap-4 group"
             style={{ animationDelay: `${idx * 80}ms` }}
           >
-            <span className="text-2xl">{stat.icon}</span>
+            <span className={`flex-shrink-0 ${stat.color}`}>
+              <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d={stat.path} />
+              </svg>
+            </span>
             <div>
               <p className="text-[11px] uppercase tracking-wider text-surface-500">{stat.label}</p>
               <p className="text-2xl font-extrabold text-white number-display">{stat.value}</p>

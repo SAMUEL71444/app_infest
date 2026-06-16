@@ -324,22 +324,6 @@ export default function Predictor() {
         </div>
       </div>
 
-      {/* Honesty note */}
-      <div className="insight-box insight-box-warning mt-8">
-        <div className="flex items-start gap-3">
-          <svg className="w-5 h-5 text-warning-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-          </svg>
-          <p className="text-sm text-surface-300 leading-relaxed">
-            <span className="font-semibold text-warning-300">Catatan transparansi:</span>{' '}
-            Prediktor langsung ini memakai <span className="font-semibold text-surface-200">regresi logistik ringan</span> yang berjalan
-            sepenuhnya di browser (akurasi CV {(model.cv_accuracy * 100).toFixed(1)}%, ROC-AUC {model.cv_roc_auc.toFixed(3)}),
-            dilatih pada {model.n_samples} data dan fitur yang sama dengan model unggulan. Model final lomba —
-            <span className="font-semibold text-surface-200"> Oblivious Gradient-Boosted Tree (CatBoost) + TVAE</span> (ROC-AUC 0.994) —
-            digunakan untuk hasil resmi pada laporan.
-          </p>
-        </div>
-      </div>
     </SectionWrapper>
   );
 }

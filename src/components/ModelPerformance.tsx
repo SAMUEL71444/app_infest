@@ -107,15 +107,30 @@ export default function ModelPerformance() {
         </p>
 
         <div className="overflow-x-auto -mx-6 md:-mx-8 px-6 md:px-8">
-          <table className="w-full text-sm">
+          <table className="w-full text-sm table-fixed min-w-[640px]">
+            <colgroup>
+              <col className="w-14" />
+              <col />
+              <col className="w-28" />
+              <col className="w-28" />
+              <col className="w-28" />
+              <col className="w-28" />
+            </colgroup>
             <thead>
               <tr className="border-b border-surface-700/60">
-                {['Rank', 'Model Name', 'Accuracy', 'ROC-AUC', 'MCC', 'PR-AUC'].map((h) => (
+                {[
+                  { label: 'Rank', align: 'text-left' },
+                  { label: 'Model Name', align: 'text-left' },
+                  { label: 'Accuracy', align: 'text-right' },
+                  { label: 'ROC-AUC', align: 'text-right' },
+                  { label: 'MCC', align: 'text-right' },
+                  { label: 'PR-AUC', align: 'text-right' },
+                ].map((h) => (
                   <th
-                    key={h}
-                    className="pb-3 text-left font-semibold text-surface-400 uppercase tracking-wider text-xs whitespace-nowrap px-3 first:pl-0 last:pr-0"
+                    key={h.label}
+                    className={`pb-3 ${h.align} font-semibold text-surface-400 uppercase tracking-wider text-xs whitespace-nowrap px-3 first:pl-0 last:pr-0`}
                   >
-                    {h}
+                    {h.label}
                   </th>
                 ))}
               </tr>
@@ -154,26 +169,26 @@ export default function ModelPerformance() {
                   </td>
 
                   {/* Accuracy */}
-                  <td className="py-4 px-3 font-mono text-surface-200 tabular-nums">
+                  <td className="py-4 px-3 text-right font-mono text-surface-200 tabular-nums">
                     {(m.accuracy * 100).toFixed(2)}%
                   </td>
 
                   {/* ROC-AUC */}
-                  <td className="py-4 px-3 font-mono tabular-nums">
+                  <td className="py-4 px-3 text-right font-mono tabular-nums">
                     <span className={m.ours ? 'text-brand-300 font-semibold' : 'text-surface-200'}>
                       {m.roc_auc.toFixed(4)}
                     </span>
                   </td>
 
                   {/* MCC */}
-                  <td className="py-4 px-3 font-mono tabular-nums">
+                  <td className="py-4 px-3 text-right font-mono tabular-nums">
                     <span className={m.ours ? 'text-success-400 font-semibold' : 'text-surface-200'}>
                       {m.mcc.toFixed(4)}
                     </span>
                   </td>
 
                   {/* PR-AUC */}
-                  <td className="py-4 px-3 last:pr-0 font-mono text-surface-200 tabular-nums">
+                  <td className="py-4 px-3 last:pr-0 text-right font-mono text-surface-200 tabular-nums">
                     {m.pr_auc.toFixed(4)}
                   </td>
                 </tr>

@@ -1,3 +1,4 @@
+import IntroSplash from './components/IntroSplash';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ModelPerformance from './components/ModelPerformance';
@@ -12,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="bg-surface-950 min-h-screen text-surface-100 font-sans">
+      <IntroSplash />
       <Navbar />
       
       <main className="pt-16">
