@@ -89,7 +89,6 @@ export default function HeroSection() {
         {/* Badge */}
         <div className="flex justify-center mb-8">
           <span className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 animate-pulse-glow">
-            <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse" />
             DSC INFEST 2026 — BINUS University
           </span>
         </div>

@@ -59,7 +59,6 @@ export default function IntroSplash() {
       {/* Content */}
       <div className="relative z-10 text-center px-6">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-7 text-[11px] font-semibold tracking-widest uppercase rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20 animate-fade-in-up delay-200">
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse" />
           DSC INFEST 2026
         </span>
 
