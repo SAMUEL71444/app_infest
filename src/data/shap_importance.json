@@ -1,0 +1,12 @@
+[
+  { "feature": "Readiness_Score", "importance": 3.7012, "category": "behavioral", "label": "Skor Kesiapan Usaha" },
+  { "feature": "Age_Started", "importance": 1.2845, "category": "behavioral", "label": "Usia Saat Memulai Usaha" },
+  { "feature": "Preparation_Score", "importance": 0.9523, "category": "behavioral", "label": "Skor Persiapan" },
+  { "feature": "Capital_Ratio", "importance": 0.7891, "category": "behavioral", "label": "Rasio Modal" },
+  { "feature": "Business_Knowledge", "importance": 0.6234, "category": "behavioral", "label": "Pengetahuan Bisnis" },
+  { "feature": "Digital_Adoption", "importance": 0.4567, "category": "behavioral", "label": "Adopsi Digital" },
+  { "feature": "Training_Hours", "importance": 0.3210, "category": "behavioral", "label": "Jam Pelatihan" },
+  { "feature": "Education_Level", "importance": 0.2145, "category": "demographic", "label": "Tingkat Pendidikan" },
+  { "feature": "Owner_Age", "importance": 0.0834, "category": "demographic", "label": "Usia Pemilik" },
+  { "feature": "Owner_Gender", "importance": 0.0112, "category": "demographic", "label": "Gender Pemilik" }
+]

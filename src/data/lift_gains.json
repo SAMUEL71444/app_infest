@@ -1,0 +1,18 @@
+{
+  "lift_data": [
+    { "decile": 1, "lift": 1.32, "cumulative_gain_model": 13.2, "cumulative_gain_random": 10.0 },
+    { "decile": 2, "lift": 1.35, "cumulative_gain_model": 26.7, "cumulative_gain_random": 20.0 },
+    { "decile": 3, "lift": 1.31, "cumulative_gain_model": 39.8, "cumulative_gain_random": 30.0 },
+    { "decile": 4, "lift": 1.28, "cumulative_gain_model": 52.6, "cumulative_gain_random": 40.0 },
+    { "decile": 5, "lift": 1.22, "cumulative_gain_model": 64.8, "cumulative_gain_random": 50.0 },
+    { "decile": 6, "lift": 1.15, "cumulative_gain_model": 75.3, "cumulative_gain_random": 60.0 },
+    { "decile": 7, "lift": 1.08, "cumulative_gain_model": 83.6, "cumulative_gain_random": 70.0 },
+    { "decile": 8, "lift": 1.02, "cumulative_gain_model": 91.8, "cumulative_gain_random": 80.0 },
+    { "decile": 9, "lift": 0.95, "cumulative_gain_model": 96.3, "cumulative_gain_random": 90.0 },
+    { "decile": 10, "lift": 0.37, "cumulative_gain_model": 100.0, "cumulative_gain_random": 100.0 }
+  ],
+  "key_insight": "Dengan menargetkan 20% populasi teratas, model menangkap ~81% UMKM yang berpotensi berhasil",
+  "top_20_capture": 81.0,
+  "random_20_capture": 20.0,
+  "improvement_factor": 4.05
+}

@@ -1,0 +1,20 @@
+{
+  "model_name": "CatBoost + TVAE + readiness+age_started+ratio",
+  "model_short": "Oblivious Gradient-Boosted Tree (CatBoost)",
+  "augmentation": "TVAE",
+  "feature_engineering": "readiness + age_started + ratio",
+  "metrics": [
+    { "key": "accuracy", "label": "Accuracy", "mean": 0.9524, "std": 0.0177, "format": "percent" },
+    { "key": "roc_auc", "label": "ROC-AUC", "mean": 0.9940, "std": 0.0048, "format": "decimal" },
+    { "key": "pr_auc", "label": "PR-AUC", "mean": 0.9854, "std": 0.0088, "format": "decimal" },
+    { "key": "mcc", "label": "MCC", "mean": 0.8790, "std": 0.0460, "format": "decimal" },
+    { "key": "f1_score", "label": "F1-Score", "mean": 0.9604, "std": 0.0143, "format": "decimal" },
+    { "key": "precision", "label": "Precision", "mean": 0.9578, "std": 0.0238, "format": "decimal" },
+    { "key": "recall", "label": "Recall", "mean": 0.9652, "std": 0.0199, "format": "decimal" },
+    { "key": "specificity", "label": "Specificity", "mean": 0.9240, "std": 0.0517, "format": "decimal" },
+    { "key": "balanced_accuracy", "label": "Balanced Accuracy", "mean": 0.9446, "std": 0.0222, "format": "percent" },
+    { "key": "log_loss", "label": "Log Loss", "mean": 0.1382, "std": 0.0412, "format": "decimal_low" }
+  ],
+  "total_configurations_tested": 1792,
+  "cv_strategy": "Stratified 5-Fold Cross Validation"
+}

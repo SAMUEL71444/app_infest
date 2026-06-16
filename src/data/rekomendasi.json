@@ -1,0 +1,47 @@
+[
+  {
+    "rank": 1,
+    "factor": "Readiness Score",
+    "label": "Skor Kesiapan Usaha",
+    "description": "Tingkat kesiapan menyeluruh pemilik sebelum memulai usaha — mencakup riset pasar, perencanaan keuangan, dan kesiapan mental. Faktor paling dominan dalam menentukan keberhasilan UMKM.",
+    "action": "Ikuti program inkubasi bisnis, buat business plan terstruktur, lakukan riset pasar mendalam, dan siapkan proyeksi keuangan minimal 12 bulan sebelum memulai usaha.",
+    "changeable": true,
+    "shap_importance": 3.7012
+  },
+  {
+    "rank": 2,
+    "factor": "Age Started",
+    "label": "Usia Saat Memulai Usaha",
+    "description": "Usia pemilik saat pertama kali memulai usaha. Berkorelasi dengan pengalaman hidup dan kematangan dalam mengambil keputusan bisnis.",
+    "action": "Tidak dapat diubah secara langsung, namun pengalaman kerja dan magang di industri terkait sebelum memulai usaha dapat mengkompensasi faktor usia.",
+    "changeable": false,
+    "shap_importance": 1.2845
+  },
+  {
+    "rank": 3,
+    "factor": "Preparation Score",
+    "label": "Skor Persiapan",
+    "description": "Seberapa matang persiapan operasional dan administratif usaha sebelum diluncurkan — termasuk legalitas, supply chain, dan sistem manajemen.",
+    "action": "Lengkapi perizinan usaha (NIB, IUMK), bangun jaringan supplier yang andal, dan siapkan SOP operasional dasar sebelum memulai.",
+    "changeable": true,
+    "shap_importance": 0.9523
+  },
+  {
+    "rank": 4,
+    "factor": "Capital Ratio",
+    "label": "Rasio Modal",
+    "description": "Perbandingan antara modal yang tersedia dengan kebutuhan modal ideal. Rasio yang sehat menunjukkan perencanaan keuangan yang matang.",
+    "action": "Optimalkan alokasi modal awal, manfaatkan program KUR dan pendanaan UMKM pemerintah, dan jaga rasio utang terhadap modal di bawah 60%.",
+    "changeable": true,
+    "shap_importance": 0.7891
+  },
+  {
+    "rank": 5,
+    "factor": "Business Knowledge",
+    "label": "Pengetahuan Bisnis",
+    "description": "Tingkat pemahaman pemilik tentang aspek-aspek kunci bisnis: manajemen keuangan, pemasaran, operasional, dan regulasi terkait.",
+    "action": "Ikuti pelatihan UMKM dari Kemenkop/dinas terkait, ambil kursus online manajemen bisnis, dan bergabung dengan komunitas pengusaha untuk berbagi pengetahuan.",
+    "changeable": true,
+    "shap_importance": 0.6234
+  }
+]

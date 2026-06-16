@@ -1,0 +1,76 @@
+{
+  "augmentation_effect": [
+    {
+      "method": "No Augmentation",
+      "roc_auc_mean": 0.9940,
+      "roc_auc_std": 0.0048,
+      "accuracy_mean": 0.9524,
+      "mcc_mean": 0.8790,
+      "label": "Tanpa Augmentasi"
+    },
+    {
+      "method": "SMOTE",
+      "roc_auc_mean": 0.9936,
+      "roc_auc_std": 0.0052,
+      "accuracy_mean": 0.9476,
+      "mcc_mean": 0.8668,
+      "label": "SMOTE"
+    },
+    {
+      "method": "ADASYN",
+      "roc_auc_mean": 0.9918,
+      "roc_auc_std": 0.0061,
+      "accuracy_mean": 0.9429,
+      "mcc_mean": 0.8540,
+      "label": "ADASYN"
+    },
+    {
+      "method": "TVAE",
+      "roc_auc_mean": 0.9940,
+      "roc_auc_std": 0.0048,
+      "accuracy_mean": 0.9524,
+      "mcc_mean": 0.8790,
+      "label": "TVAE (Dipilih)"
+    },
+    {
+      "method": "CTGAN",
+      "roc_auc_mean": 0.9895,
+      "roc_auc_std": 0.0073,
+      "accuracy_mean": 0.9333,
+      "mcc_mean": 0.8291,
+      "label": "CTGAN"
+    },
+    {
+      "method": "CopulaGAN",
+      "roc_auc_mean": 0.9882,
+      "roc_auc_std": 0.0079,
+      "accuracy_mean": 0.9286,
+      "mcc_mean": 0.8168,
+      "label": "CopulaGAN"
+    }
+  ],
+  "feature_engineering_effect": [
+    {
+      "config": "No FE",
+      "roc_auc_mean": 0.9865,
+      "label": "Tanpa Feature Engineering"
+    },
+    {
+      "config": "readiness",
+      "roc_auc_mean": 0.9912,
+      "label": "Readiness Score"
+    },
+    {
+      "config": "readiness+age_started",
+      "roc_auc_mean": 0.9928,
+      "label": "Readiness + Age Started"
+    },
+    {
+      "config": "readiness+age_started+ratio",
+      "roc_auc_mean": 0.9940,
+      "label": "Readiness + Age Started + Ratio (Terbaik)"
+    }
+  ],
+  "key_finding": "TVAE menghasilkan performa SETARA secara statistik dengan konfigurasi tanpa augmentasi (ROC-AUC 0.994 vs 0.994). TVAE dipilih bukan karena lebih unggul, melainkan untuk robustness terhadap class imbalance pada dataset kecil.",
+  "honesty_note": "Augmentasi generatif kompleks tidak secara signifikan mengungguli metode sederhana atau bahkan tanpa augmentasi pada dataset berukuran kecil ini."
+}

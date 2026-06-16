@@ -1,0 +1,46 @@
+[
+  {
+    "segment": "A",
+    "label": "Ready & Thriving",
+    "color": "#10b981",
+    "profile": "UMKM dengan skor kesiapan tinggi, persiapan matang, dan rasio modal sehat. Pemilik memiliki pengetahuan bisnis kuat dan sudah mengadopsi teknologi digital.",
+    "probability_range": "0.85 – 1.00",
+    "count": 37,
+    "percentage": 17.6,
+    "success_rate": 100.0,
+    "intervention": "Pertahankan momentum, fasilitasi akses ke pasar ekspor dan pendanaan skala-up. Jadikan sebagai mentor bagi segmen lain."
+  },
+  {
+    "segment": "B",
+    "label": "Developing",
+    "color": "#3b82f6",
+    "profile": "UMKM dengan kesiapan menengah-tinggi. Sudah memiliki dasar yang baik tetapi masih perlu penguatan di beberapa aspek operasional dan finansial.",
+    "probability_range": "0.60 – 0.84",
+    "count": 12,
+    "percentage": 5.7,
+    "success_rate": 91.7,
+    "intervention": "Berikan pelatihan intensif manajemen keuangan dan pemasaran digital. Hubungkan dengan program pendampingan UMKM."
+  },
+  {
+    "segment": "C",
+    "label": "Emerging",
+    "color": "#f59e0b",
+    "profile": "UMKM dengan kesiapan menengah-rendah. Memiliki motivasi tetapi kurang di persiapan dan pengetahuan bisnis. Potensi berkembang dengan intervensi tepat.",
+    "probability_range": "0.30 – 0.59",
+    "count": 8,
+    "percentage": 3.8,
+    "success_rate": 75.0,
+    "intervention": "Prioritaskan program inkubasi dan pelatihan dasar bisnis. Sediakan template business plan dan panduan perizinan langkah demi langkah."
+  },
+  {
+    "segment": "D",
+    "label": "At-Risk",
+    "color": "#ef4444",
+    "profile": "UMKM dengan skor kesiapan rendah, persiapan minimal, dan rasio modal tidak sehat. Kelompok terbesar yang membutuhkan intervensi paling intensif.",
+    "probability_range": "0.00 – 0.29",
+    "count": 153,
+    "percentage": 72.8,
+    "success_rate": 55.6,
+    "intervention": "Intervensi komprehensif: program pra-usaha wajib mencakup business plan, riset pasar, dan literasi keuangan sebelum diizinkan mengakses pendanaan UMKM."
+  }
+]
