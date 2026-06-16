@@ -1,5 +1,5 @@
 {
-  "_comment": "Lightweight client-side logistic regression for the live predictor. The competition headline model is CatBoost (ROC-AUC 0.994); this LR is a transparent in-browser approximation trained on the same features + FE.",
+  "_comment": "Lightweight client-side logistic regression for the live predictor. The competition headline model is CatBoost (ROC-AUC 0.993); this LR is a transparent in-browser approximation trained on the same features + FE.",
   "base_features": [
     "Age",
     "Education",

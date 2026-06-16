@@ -4,7 +4,7 @@ Pure-Python logistic-regression trainer for the interactive UMKM predictor.
 Why this exists
 ---------------
 The competition's headline model is CatBoost ("Oblivious Gradient-Boosted Tree")
-+ TVAE (ROC-AUC 0.994). That model cannot run inside a static browser bundle.
++ TVAE (ROC-AUC 0.993). That model cannot run inside a static browser bundle.
 For the interactive "Coba Prediksi UMKM Baru" feature we train a lightweight,
 fully transparent logistic regression on the SAME features + feature-engineering
 blocks the report's best config used (readiness + age_started + ratio), then
@@ -137,7 +137,7 @@ w, b = train(Xs, y)
 
 model = {
     "_comment": "Lightweight client-side logistic regression for the live predictor. "
-                "The competition headline model is CatBoost (ROC-AUC 0.994); this LR is a "
+                "The competition headline model is CatBoost (ROC-AUC 0.993); this LR is a "
                 "transparent in-browser approximation trained on the same features + FE.",
     "base_features": BASE_FEATURES,
     "engineered": ["Readiness_Score", "Age_Started", "Exp_per_Age"],
