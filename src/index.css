@@ -195,7 +195,7 @@ body {
   border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-.badge-changeable.fixed {
+.badge-changeable.inherent {
   background: rgba(100, 116, 139, 0.15);
   color: var(--color-surface-400);
   border: 1px solid rgba(100, 116, 139, 0.3);
@@ -363,6 +363,24 @@ body {
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
 .delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+
+/* === Intro splash reveal === */
+@keyframes introReveal {
+  0% { opacity: 0; transform: translateY(18px) scale(0.96); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+.animate-intro-reveal {
+  animation: introReveal 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes introLine {
+  0% { width: 0; opacity: 0; }
+  100% { width: 100%; opacity: 1; }
+}
+.animate-intro-line {
+  animation: introLine 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
 
 /* === Chart Custom Styles === */
 .recharts-cartesian-grid-horizontal line,

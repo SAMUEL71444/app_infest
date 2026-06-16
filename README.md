@@ -10,6 +10,10 @@ Dashboard data science yang menampilkan hasil analisis & model prediksi keberhas
 ## Pesan Inti
 > **Keberhasilan UMKM ditentukan oleh *apa yang dilakukan* pemilik (praktik yang dapat diperbaiki seperti kesiapan usaha), BUKAN oleh *siapa* pemiliknya (faktor demografis seperti usia/gender yang terbukti hampir tidak berpengaruh).**
 
+## Fitur
+- **Dashboard hasil** — Performa model, faktor penentu (SHAP), Top-5 rekomendasi aksi, segmentasi UMKM (A/B/C/D), Lift & Cumulative Gains, dan analisis augmentasi.
+- **Prediksi Interaktif** — Masukkan karakteristik sebuah UMKM, lalu model menghitung probabilitas keberhasilan + segmen (A/B/C/D) secara langsung di browser. Lihat [Predictor Interaktif](#predictor-interaktif).
+
 ## Tech Stack
 - React + TypeScript
 - Vite
@@ -45,6 +49,28 @@ Semua data dimuat dari file JSON statis di `src/data/`:
 | `segmentasi.json` | 4 segmen UMKM (A/B/C/D) |
 | `lift_gains.json` | Data Lift per decile & Cumulative Gains |
 | `model_results.json` | Hasil eksperimen augmentasi & feature engineering |
+| `predictor_model.json` | Koefisien model regresi logistik untuk prediksi interaktif (inference di browser) |
+
+## Predictor Interaktif
+
+Seksi **"Coba Prediksi UMKM Baru"** memungkinkan juri/pengguna memasukkan profil UMKM
+dan langsung mendapat estimasi probabilitas keberhasilan + segmennya.
+
+**Cara kerja (jujur & transparan):**
+- Model unggulan lomba — *Oblivious Gradient-Boosted Tree (CatBoost) + TVAE* (ROC-AUC 0.994) —
+  tidak bisa dijalankan di dalam bundle statis browser.
+- Untuk prediksi *real-time* dipakai **regresi logistik ringan** yang dilatih pada **fitur yang sama**
+  (+ feature engineering `readiness + age_started + ratio`). Akurasi 5-fold CV ≈ **94.4%**, ROC-AUC ≈ **0.994**.
+- Koefisiennya di-*export* ke `src/data/predictor_model.json`; inferensi (standardize → linear → sigmoid)
+  berjalan **sepenuhnya di sisi klien** sehingga tetap bisa di-deploy gratis di Vercel tanpa backend.
+- Pembagian segmen mengikuti notebook: `p > 0.80` → A, `> 0.50` → B, `> 0.30` → C, sisanya → D.
+
+**Melatih ulang model** (mis. jika data diperbarui):
+
+```bash
+cd scripts
+python3 train_predictor.py   # tanpa dependensi pihak ketiga; menulis ulang src/data/predictor_model.json
+```
 
 ## Sumber
 - **Konfigurasi:** 1.792 konfigurasi via Stratified 5-Fold Cross Validation

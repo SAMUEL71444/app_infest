@@ -1,9 +1,11 @@
+import IntroSplash from './components/IntroSplash';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ModelPerformance from './components/ModelPerformance';
 import ShapImportance from './components/ShapImportance';
 import Recommendations from './components/Recommendations';
 import SegmentasiSection from './components/SegmentasiSection';
+import Predictor from './components/Predictor';
 import LiftGains from './components/LiftGains';
 import AugmentationAnalysis from './components/AugmentationAnalysis';
 import Footer from './components/Footer';
@@ -11,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="bg-surface-950 min-h-screen text-surface-100 font-sans">
+      <IntroSplash />
       <Navbar />
       
       <main className="pt-16">
@@ -24,6 +27,7 @@ function App() {
           <ShapImportance />
           <Recommendations />
           <SegmentasiSection />
+          <Predictor />
           <LiftGains />
           <AugmentationAnalysis />
         </div>
