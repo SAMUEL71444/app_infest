@@ -12,6 +12,7 @@ Dashboard data science yang menampilkan hasil analisis & model prediksi keberhas
 
 ## Fitur
 - **Dashboard hasil** — Performa model, faktor penentu (SHAP), Top-5 rekomendasi aksi, segmentasi UMKM (A/B/C/D), Lift & Cumulative Gains, dan analisis augmentasi.
+- **Top-5 UMKM Berpeluang Sukses** — Lima UMKM dengan probabilitas tertinggi menurut model, di-skor dari seluruh dataset (`scripts/rank_umkm.py` → `top_umkm.json`).
 - **Prediksi Interaktif** — Masukkan karakteristik sebuah UMKM, lalu model menghitung probabilitas keberhasilan + segmen (A/B/C/D) secara langsung di browser. Lihat [Predictor Interaktif](#predictor-interaktif).
 
 ## Tech Stack
@@ -50,6 +51,7 @@ Semua data dimuat dari file JSON statis di `src/data/`:
 | `lift_gains.json` | Data Lift per decile & Cumulative Gains |
 | `model_results.json` | Hasil eksperimen augmentasi & feature engineering |
 | `predictor_model.json` | Koefisien model regresi logistik untuk prediksi interaktif (inference di browser) |
+| `top_umkm.json` | Top-5 UMKM dengan probabilitas tertinggi (hasil `scripts/rank_umkm.py`) |
 
 ## Predictor Interaktif
 
@@ -70,6 +72,7 @@ dan langsung mendapat estimasi probabilitas keberhasilan + segmennya.
 ```bash
 cd scripts
 python3 train_predictor.py   # tanpa dependensi pihak ketiga; menulis ulang src/data/predictor_model.json
+python3 rank_umkm.py         # skor ulang seluruh dataset → menulis ulang src/data/top_umkm.json
 ```
 
 ## Sumber

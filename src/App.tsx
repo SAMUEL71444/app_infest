@@ -5,6 +5,7 @@ import ModelPerformance from './components/ModelPerformance';
 import Shap3DChart from './components/Shap3DChart';
 import Recommendations from './components/Recommendations';
 import SegmentasiSection from './components/SegmentasiSection';
+import TopUMKM from './components/TopUMKM';
 import Predictor from './components/Predictor';
 import LiftGains from './components/LiftGains';
 import AugmentationAnalysis from './components/AugmentationAnalysis';
@@ -27,6 +28,7 @@ function App() {
           <Shap3DChart />
           <Recommendations />
           <SegmentasiSection />
+          <TopUMKM />
           <Predictor />
           <LiftGains />
           <AugmentationAnalysis />
