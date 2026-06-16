@@ -2,7 +2,7 @@
   "augmentation_effect": [
     {
       "method": "No Augmentation",
-      "roc_auc_mean": 0.9940,
+      "roc_auc_mean": 0.9930,
       "roc_auc_std": 0.0048,
       "accuracy_mean": 0.9524,
       "mcc_mean": 0.8790,
@@ -26,7 +26,7 @@
     },
     {
       "method": "TVAE",
-      "roc_auc_mean": 0.9940,
+      "roc_auc_mean": 0.9930,
       "roc_auc_std": 0.0048,
       "accuracy_mean": 0.9524,
       "mcc_mean": 0.8790,
@@ -67,10 +67,10 @@
     },
     {
       "config": "readiness+age_started+ratio",
-      "roc_auc_mean": 0.9940,
+      "roc_auc_mean": 0.9930,
       "label": "Readiness + Age Started + Ratio (Terbaik)"
     }
   ],
-  "key_finding": "TVAE menghasilkan performa SETARA secara statistik dengan konfigurasi tanpa augmentasi (ROC-AUC 0.994 vs 0.994). TVAE dipilih bukan karena lebih unggul, melainkan untuk robustness terhadap class imbalance pada dataset kecil.",
+  "key_finding": "TVAE menghasilkan performa SETARA secara statistik dengan konfigurasi tanpa augmentasi (ROC-AUC 0.993 vs 0.993). TVAE dipilih bukan karena lebih unggul, melainkan untuk robustness terhadap class imbalance pada dataset kecil.",
   "honesty_note": "Augmentasi generatif kompleks tidak secara signifikan mengungguli metode sederhana atau bahkan tanpa augmentasi pada dataset berukuran kecil ini."
 }

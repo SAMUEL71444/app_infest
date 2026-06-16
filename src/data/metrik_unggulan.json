@@ -5,8 +5,8 @@
   "feature_engineering": "readiness + age_started + ratio",
   "metrics": [
     { "key": "accuracy", "label": "Accuracy", "mean": 0.9524, "std": 0.0177, "format": "percent" },
-    { "key": "roc_auc", "label": "ROC-AUC", "mean": 0.9940, "std": 0.0048, "format": "decimal" },
-    { "key": "pr_auc", "label": "PR-AUC", "mean": 0.9854, "std": 0.0088, "format": "decimal" },
+    { "key": "roc_auc", "label": "ROC-AUC", "mean": 0.9930, "std": 0.0048, "format": "decimal" },
+    { "key": "pr_auc", "label": "PR-AUC", "mean": 0.9840, "std": 0.0088, "format": "decimal" },
     { "key": "mcc", "label": "MCC", "mean": 0.8790, "std": 0.0460, "format": "decimal" },
     { "key": "f1_score", "label": "F1-Score", "mean": 0.9604, "std": 0.0143, "format": "decimal" },
     { "key": "precision", "label": "Precision", "mean": 0.9578, "std": 0.0238, "format": "decimal" },

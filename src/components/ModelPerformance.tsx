@@ -13,7 +13,6 @@ interface TopModel {
   roc_auc: number;
   pr_auc: number;
   mcc: number;
-  f1_score: number;
   ours: boolean;
 }
 
@@ -154,9 +153,9 @@ export default function ModelPerformance() {
                   </td>
 
                   {/* Model Name */}
-                  <td className="py-4 px-3 font-medium text-surface-100 whitespace-nowrap">
-                    <div className="flex items-center gap-2">
-                      {m.name}
+                  <td className="py-4 px-3 font-medium text-surface-100">
+                    <div className="flex flex-wrap items-center gap-2">
+                      {m.full_name}
                       {m.ours && (
                         <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand-500/15 text-brand-400 border border-brand-500/25">
                           <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
@@ -276,7 +275,7 @@ export default function ModelPerformance() {
             </span>
             <p className="text-sm text-surface-300 leading-relaxed">
               Model unggulan <span className="font-semibold text-brand-300">Oblivious Gradient-Boosted Tree (CatBoost) + TVAE</span> mencapai ROC-AUC{' '}
-              <span className="font-bold text-brand-300">0.994</span>, menunjukkan kemampuan diskriminasi yang sangat tinggi antara UMKM berhasil dan tidak berhasil.
+              <span className="font-bold text-brand-300">0.993</span>, menunjukkan kemampuan diskriminasi yang sangat tinggi antara UMKM berhasil dan tidak berhasil.
             </p>
           </div>
         </div>

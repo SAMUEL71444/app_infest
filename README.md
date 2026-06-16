@@ -59,10 +59,10 @@ Seksi **"Coba Prediksi UMKM Baru"** memungkinkan juri/pengguna memasukkan profil
 dan langsung mendapat estimasi probabilitas keberhasilan + segmennya.
 
 **Cara kerja (jujur & transparan):**
-- Model unggulan lomba — *Oblivious Gradient-Boosted Tree (CatBoost) + TVAE* (ROC-AUC 0.994) —
+- Model unggulan lomba — *Oblivious Gradient-Boosted Tree (CatBoost) + TVAE* (ROC-AUC 0.993) —
   tidak bisa dijalankan di dalam bundle statis browser.
 - Untuk prediksi *real-time* dipakai **regresi logistik ringan** yang dilatih pada **fitur yang sama**
-  (+ feature engineering `readiness + age_started + ratio`). Akurasi 5-fold CV ≈ **94.4%**, ROC-AUC ≈ **0.994**.
+  (+ feature engineering `readiness + age_started + ratio`). Akurasi 5-fold CV ≈ **94.4%**, ROC-AUC tinggi (≈ **0.99**).
 - Koefisiennya di-*export* ke `src/data/predictor_model.json`; inferensi (standardize → linear → sigmoid)
   berjalan **sepenuhnya di sisi klien** sehingga tetap bisa di-deploy gratis di Vercel tanpa backend.
 - Pembagian segmen mengikuti notebook: `p > 0.80` → A, `> 0.50` → B, `> 0.30` → C, sisanya → D.
