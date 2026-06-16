@@ -116,7 +116,7 @@ export default function SegmentasiSection() {
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.segment === 'D' ? '#ef4444' : '#3b82f6'} fillOpacity={entry.segment === 'D' ? 0.9 : 0.6} />
                   ))}
-                  <LabelList dataKey="distribusi" position="top" formatter={(val: number) => `${val}%`} fill="#cbd5e1" fontSize={11} />
+                  <LabelList dataKey="distribusi" position="top" formatter={(val: any) => `${val}%`} fill="#cbd5e1" fontSize={11} />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
@@ -142,7 +142,7 @@ export default function SegmentasiSection() {
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.segment === 'A' ? '#10b981' : '#3b82f6'} fillOpacity={entry.segment === 'A' ? 0.9 : 0.6} />
                   ))}
-                  <LabelList dataKey="sukses" position="top" formatter={(val: number) => `${val}%`} fill="#cbd5e1" fontSize={11} />
+                  <LabelList dataKey="sukses" position="top" formatter={(val: any) => `${val}%`} fill="#cbd5e1" fontSize={11} />
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
