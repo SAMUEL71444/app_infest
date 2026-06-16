@@ -3,7 +3,7 @@
  * Tidak menggunakan CDN font atau Environment HDR.
  * Labels pakai Html component (pure HTML overlay dalam Canvas).
  */
-import { useRef, useState, useMemo } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, Float, Sparkles, MeshDistortMaterial, Html } from '@react-three/drei';
 import * as THREE from 'three';
