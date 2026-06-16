@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://www.kaggle.com/code/andreasedo/notebook-infestyaudahlahya"
+                  href="https://www.kaggle.com/code/andreasedo/notebook-infest-yaudahlahya"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-400 hover:text-brand-300 transition-colors flex items-center gap-2"
