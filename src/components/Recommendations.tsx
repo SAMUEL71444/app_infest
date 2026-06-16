@@ -1,3 +1,4 @@
+import Tilt from 'react-parallax-tilt';
 import SectionWrapper from './SectionWrapper';
 import rekomendasi from '../data/rekomendasi.json';
 
@@ -43,10 +44,22 @@ export default function Recommendations() {
       {/* ── Recommendation Cards ───────────────────────────── */}
       <div className="flex flex-col gap-6">
         {rekomendasi.map((item, idx) => (
-          <div
+          <Tilt
             key={item.rank}
-            className="highlight-card group"
-            style={{ animationDelay: `${idx * 120}ms` }}
+            tiltMaxAngleX={4}
+            tiltMaxAngleY={6}
+            perspective={1200}
+            glareEnable={true}
+            glareMaxOpacity={0.06}
+            glareColor={item.changeable ? '#06b6d4' : '#64748b'}
+            glarePosition="top"
+            glareBorderRadius="16px"
+            transitionSpeed={600}
+            scale={1.015}
+            style={{ animationDelay: `${idx * 120}ms`, transformOrigin: 'center center' }}
+          >
+          <div
+            className="highlight-card group h-full"
           >
             {/* Card Header */}
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -119,6 +132,7 @@ export default function Recommendations() {
               </p>
             </div>
           </div>
+          </Tilt>
         ))}
       </div>
 
