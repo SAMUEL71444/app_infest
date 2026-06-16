@@ -6,6 +6,7 @@ const navItems = [
   { id: 'shap', label: 'Faktor Penentu' },
   { id: 'recommendations', label: 'Rekomendasi' },
   { id: 'segmentation', label: 'Segmentasi' },
+  { id: 'top-umkm', label: 'Top UMKM' },
   { id: 'predictor', label: 'Prediksi' },
   { id: 'lift-gains', label: 'Lift & Gains' },
   { id: 'augmentation', label: 'Augmentasi' },
