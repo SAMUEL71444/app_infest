@@ -4,6 +4,7 @@ import ModelPerformance from './components/ModelPerformance';
 import ShapImportance from './components/ShapImportance';
 import Recommendations from './components/Recommendations';
 import SegmentasiSection from './components/SegmentasiSection';
+import Predictor from './components/Predictor';
 import LiftGains from './components/LiftGains';
 import AugmentationAnalysis from './components/AugmentationAnalysis';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ function App() {
           <ShapImportance />
           <Recommendations />
           <SegmentasiSection />
+          <Predictor />
           <LiftGains />
           <AugmentationAnalysis />
         </div>
