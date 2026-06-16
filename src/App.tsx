@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import ModelPerformance from './components/ModelPerformance';
 import ShapImportance from './components/ShapImportance';
 import Recommendations from './components/Recommendations';
-import Segmentation from './components/Segmentation';
+import SegmentasiSection from './components/SegmentasiSection';
 import LiftGains from './components/LiftGains';
 import AugmentationAnalysis from './components/AugmentationAnalysis';
 import Footer from './components/Footer';
@@ -23,7 +23,7 @@ function App() {
           <ModelPerformance />
           <ShapImportance />
           <Recommendations />
-          <Segmentation />
+          <SegmentasiSection />
           <LiftGains />
           <AugmentationAnalysis />
         </div>
