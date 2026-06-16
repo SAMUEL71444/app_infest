@@ -34,24 +34,7 @@ const ChartTooltip = ({ active, payload, label }: any) => {
   );
 };
 
-/* ── Custom bar shape with error bar lines ── */
-const ErrorBarShape = (props: any) => {
-  const { x, y, width, payload } = props;
-  if (!payload || !payload.std) return null;
-  const centerX = x + width / 2;
-  const errorPixels = payload.std * 8000; // scale for visibility
-  const capWidth = 6;
-  return (
-    <g>
-      {/* Vertical line */}
-      <line x1={centerX} y1={y - errorPixels} x2={centerX} y2={y + errorPixels} stroke="#94a3b8" strokeWidth={1.5} />
-      {/* Top cap */}
-      <line x1={centerX - capWidth} y1={y - errorPixels} x2={centerX + capWidth} y2={y - errorPixels} stroke="#94a3b8" strokeWidth={1.5} />
-      {/* Bottom cap */}
-      <line x1={centerX - capWidth} y1={y + errorPixels} x2={centerX + capWidth} y2={y + errorPixels} stroke="#94a3b8" strokeWidth={1.5} />
-    </g>
-  );
-};
+
 
 export default function AugmentationAnalysis() {
   return (

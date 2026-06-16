@@ -1,6 +1,6 @@
 import SectionWrapper from './SectionWrapper';
 import liftGains from '../data/lift_gains.json';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine, Area, ComposedChart } from 'recharts';
+import { BarChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ReferenceLine, Area, ComposedChart } from 'recharts';
 
 /* ── Lift chart data ── */
 const liftData = liftGains.lift_data.map(d => ({

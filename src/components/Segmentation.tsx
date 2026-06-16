@@ -43,7 +43,7 @@ export default function Segmentation() {
             <div className="flex items-center gap-3 mb-4">
               <span
                 className="w-3.5 h-3.5 rounded-full ring-4 ring-opacity-20 flex-shrink-0"
-                style={{ backgroundColor: seg.color, boxShadow: `0 0 12px ${seg.color}40`, ringColor: seg.color }}
+                style={{ backgroundColor: seg.color, boxShadow: `0 0 12px ${seg.color}40`, '--tw-ring-color': seg.color } as React.CSSProperties}
               />
               <div>
                 <span className="text-xl font-extrabold text-white">Segmen {seg.segment}</span>
