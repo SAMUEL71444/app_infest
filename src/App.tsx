@@ -2,7 +2,7 @@ import IntroSplash from './components/IntroSplash';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ModelPerformance from './components/ModelPerformance';
-import ShapImportance from './components/ShapImportance';
+import Shap3DChart from './components/Shap3DChart';
 import Recommendations from './components/Recommendations';
 import SegmentasiSection from './components/SegmentasiSection';
 import Predictor from './components/Predictor';
@@ -24,7 +24,7 @@ function App() {
           <div className="absolute top-[10%] left-0 w-full h-[80%] bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.03)_0%,transparent_70%)] pointer-events-none"></div>
           
           <ModelPerformance />
-          <ShapImportance />
+          <Shap3DChart />
           <Recommendations />
           <SegmentasiSection />
           <Predictor />
