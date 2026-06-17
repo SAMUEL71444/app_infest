@@ -5,7 +5,7 @@ import segmentasi from '../data/segmentasi.json';
 
 /* ──────────────────────────────────────────────────────────────
    Live predictor (client-side).
-   The headline competition model is CatBoost (ROC-AUC 0.993) which
+   The headline competition model is the Oblivious Gradient-Boosted Tree (ROC-AUC 0.993) which
    cannot run in a static bundle. This form runs a transparent
    logistic regression (trained on the SAME features + FE blocks:
    readiness + age_started + ratio) whose coefficients live in

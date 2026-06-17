@@ -274,7 +274,7 @@ export default function ModelPerformance() {
               </svg>
             </span>
             <p className="text-sm text-surface-300 leading-relaxed">
-              Model unggulan <span className="font-semibold text-brand-300">Oblivious Gradient-Boosted Tree (CatBoost) + TVAE</span> mencapai ROC-AUC{' '}
+              Model unggulan <span className="font-semibold text-brand-300">Oblivious Gradient-Boosted Tree + TVAE</span> mencapai ROC-AUC{' '}
               <span className="font-bold text-brand-300">0.993</span>, menunjukkan kemampuan diskriminasi yang sangat tinggi antara UMKM berhasil dan tidak berhasil.
             </p>
           </div>

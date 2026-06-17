@@ -2,7 +2,7 @@
   {
     "rank": 1,
     "name": "Oblivious GBT + TVAE",
-    "full_name": "Oblivious Gradient Boosted Trees + TVAE (CatBoost)",
+    "full_name": "Oblivious Gradient Boosted Trees + TVAE",
     "accuracy": 0.952,
     "roc_auc": 0.993,
     "pr_auc": 0.984,
