@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>
-                Oblivious Gradient-Boosted Tree (CatBoost)
+                Oblivious Gradient-Boosted Tree
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0"></span>

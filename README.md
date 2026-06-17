@@ -43,7 +43,7 @@ Semua data dimuat dari file JSON statis di `src/data/`:
 
 | File | Isi |
 |------|-----|
-| `metrik_unggulan.json` | 10 metrik lengkap model unggulan (CatBoost+TVAE) |
+| `metrik_unggulan.json` | 10 metrik lengkap model unggulan (Oblivious GBT + TVAE) |
 | `top5_model_pdf.json` | Top-5 model perbandingan |
 | `shap_importance.json` | SHAP feature importance ranking |
 | `rekomendasi.json` | Top-5 rekomendasi aksi |
@@ -59,7 +59,7 @@ Seksi **"Coba Prediksi UMKM Baru"** memungkinkan juri/pengguna memasukkan profil
 dan langsung mendapat estimasi probabilitas keberhasilan + segmennya.
 
 **Cara kerja (jujur & transparan):**
-- Model unggulan lomba — *Oblivious Gradient-Boosted Tree (CatBoost) + TVAE* (ROC-AUC 0.993) —
+- Model unggulan lomba — *Oblivious Gradient-Boosted Tree + TVAE* (ROC-AUC 0.993) —
   tidak bisa dijalankan di dalam bundle statis browser.
 - Untuk prediksi *real-time* dipakai **regresi logistik ringan** yang dilatih pada **fitur yang sama**
   (+ feature engineering `readiness + age_started + ratio`). Akurasi 5-fold CV ≈ **94.4%**, ROC-AUC tinggi (≈ **0.99**).
